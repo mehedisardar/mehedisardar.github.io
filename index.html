@@ -27,13 +27,42 @@ body {
     background-color: red;
   }
 }
+
+h1 {
+  position: absolute;
+  animation: move 10s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+  25% {
+    top: 0px;
+    left: calc(100% - 150px);
+  }
+  50% {
+    top: calc(100% - 50px);
+    left: calc(100% - 150px);
+  }
+  75% {
+    top: calc(100% - 50px);
+    left: 0px;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+  }
+}
 </style>
 </head>
 <body>
 
-<h1>Hello World</h1>
+<h1>TEST</h1>
 
-<audio src="skibidi.mp3" autoplay loop>
+
+<audio src="./Audio/skibidi.wav" autoplay loop>
   Your browser does not support the audio tag.
 </audio>
 
